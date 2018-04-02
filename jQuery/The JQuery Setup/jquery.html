@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            $('h4').click(function(){
+                alert('hello');
+            })
+            $('#btn').click(function(){
+                $('h4').hide();
+            })
+            $('#btn_s').click(function(){
+                $('h4').show();
+            })
+            $('#addme').click(function(){
+                $('.resultsADDed').append('<h4> This is what has been added on!!!</h4>');
+            })
+            $('.color').click(function(){
+                $('.title').css('background-color', 'blue');
+            })
+            //replacing the text
+            $('#replace').click(function(){
+                var MyText = $('.p_tag').text();
+                alert(MyText);
+            })
+            $('#induce').click(function(){
+                $('.replacing').text('This is how you replace what was there already!');
+            })
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h4 class="title">click me!</h4>
+    <h4>click me too! </h4>
+    <p class="p_tag">I wanna i wanna blah blah blah</p>
+    <p class="replacing">This will be disappearing very soon and right about nowwwww........</p>
+    <button id="btn">Click Now</button>
+    <button id="btn_s">Show Now</button>
+    <div class="resultsADDed"></div>
+    <button id="addme">ADD On</button>
+    <button class="color">Change color of Click Me!</button>
+
+    <button id="replace">This is to replace text</button>
+    <button id="induce">This is to alert with the text of whats provided from a title or paragraph</button>
+</body>
+</html>

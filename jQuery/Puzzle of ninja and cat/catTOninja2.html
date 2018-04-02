@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Puzzle_2</title>
+    <style>
+        img{
+            display: block;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+
+
+            $('.first').click(forImageReturn0)
+            
+            function forImageReturn0(){
+                if($(this).attr('src') === 'cat0.png'){
+                    $(this).attr('src', 'ninja0.png');
+                }
+                else{
+                    $(this).attr('src', 'cat0.png');
+                }
+            }
+            $('.second').click(forImageReturn1)
+ 
+            function forImageReturn1(){
+                if($(this).attr('src') === 'cat1.png'){
+                    $(this).attr('src', 'ninja1.png');
+                }
+                else{
+                    $(this).attr('src', 'cat1.png');
+                }
+                $('.third').click(forImageReturn2)
+}
+            function forImageReturn2(){
+                if($(this).attr('src') === 'cat2.png'){
+                    $(this).attr('src', 'ninja2.png');
+                }
+                else{
+                    $(this).attr('src', 'cat2.png');
+                }
+                $('.fourth').click(forImageReturn3)
+}
+            function forImageReturn3(){
+                if($(this).attr('src') === 'cat3.png'){
+                    $(this).attr('src', 'ninja3.png');
+                }
+                else{
+                    $(this).attr('src', 'cat3.png');
+                }
+                $('.fifth').click(forImageReturn4)
+}
+            function forImageReturn4(){
+                if($(this).attr('src') === 'cat4.png'){
+                    $(this).attr('src', 'ninja4.png');
+                }
+                else{
+                    $(this).attr('src', 'cat4.png');
+                }
+            }
+            //  $('.first').click(function(){
+            //     if($(this).attr('src') == 'cat0.png'){
+            //         $(this).attr('src', 'ninja0.png');
+            //     }
+            //     else{
+            //         $(this).attr('src', 'cat0.png');
+            //     }
+            // })
+        });
+    </script>
+</head>
+<body>
+    <img class="first" src="cat0.png">
+    <img class="second" src="cat1.png">
+    <img class="third" src="cat2.png">
+    <img class="fourth" src="cat3.png">
+    <img class="fifth" src="cat4.png">
+</body>
+</html>

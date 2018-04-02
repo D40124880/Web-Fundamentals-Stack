@@ -1,0 +1,199 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+#wrapper{
+    width: 950px;
+    height: 1100px;
+    background-color: silver;
+    margin: auto;
+   }
+#header{
+    width: 952px;
+    height: 85px;
+    background-color: white(193, 194, 194);
+}
+.header2{
+    text-align: left;
+    height: 100px;
+    width: 400px;
+    display: inline-block;
+    font-size: 60px;
+    padding-left: 30px;
+    padding-top: 7px;
+}
+.header3{
+    text-align: right;
+    display: inline-block;
+    float: right;
+    height: 50px;
+    width: 400px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+#name{
+    height: 85px;
+    width: 484px;
+    background-color: #f9f9f9;
+    display: inline-block;
+}
+#right_name{
+    height: 85px;
+    width: 470p;
+    background-color: #f9f9f9;
+    display: inline-block;
+}
+#wraps_body{
+    height: 950px;
+    width: 952px;
+    background: radial-gradient(circle, #6f5963, #4b383f, #1f0f12);
+    display: inline-block;
+}
+#wraps_upper{
+    margin: 10px;
+    padding: 10px;
+}
+#left_body{
+    height: 260px;
+    width: 390px;
+    background-color: #c0bfbf;
+    display: inline-block;
+}
+#pic{
+    height: 252px;
+    width: 382px;
+    margin: 2px;
+    padding: 2px;
+}
+#right_body{
+    height: 260px;
+    width: 500px;
+    background-color: #e9e1e9;
+    display: inline-block;
+    float: right;
+}
+#title_up{
+    height: 30px;
+    width: 500px;
+    background: linear-gradient(gray, silver, gray);
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+.about{
+    padding: 5px;
+    margin-left: 4px;
+}
+#text{
+    margin: 5px;
+    padding: 5px;
+}
+#mid_body{
+    height: 700px;
+    /* background-color: #6f5963; */
+    margin: 10px;
+}
+.column{
+    width: 288px;
+    height: 600px;
+    background-color: #c0bfbf;
+    display: inline-block;
+    margin: 10px;
+}
+.title1{
+    height: 30px;
+    background: linear-gradient(gray, silver, gray);
+}
+.pic1{
+    height: 150px;
+    width: 288px;
+}
+#bottompic{
+    margin: 0px;
+    padding: 0px;
+}
+.contents{
+    height: 200px;
+    background-color: #c0bfbf;
+    margin: 5px;
+    padding: 5px;
+}
+.title2{
+    height: 30px;
+    background: linear-gradient(gray, silver, gray);
+}
+.langs{
+    height: 40px;
+    width: 40px;
+    margin: 3px;
+    padding: 3px;
+}
+.button{
+    color: white;
+    background-color: green;
+    font-size: 16;
+    border-radius: 7px;
+}
+.tab{
+    text-align: center;
+    padding-top: 20px;
+}
+.email{
+    background-color: white(193, 194, 194);
+    text-align: center;
+    font-size: 25px;
+}
+#media{
+    height: 50px;
+    width: 952px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+}
+.linkin{
+    height: 20px;
+    width: 20px;
+}
+#mediapic{
+    display: inline-block;
+}

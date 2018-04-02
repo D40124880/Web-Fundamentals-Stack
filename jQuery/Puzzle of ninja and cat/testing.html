@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <h1> jQuery image change demo</h1>
+<div id="container">
+    <img src="http://www3.telus.net/public/jianlu58/belugas3D.jpg" />
+</div>
+<p id="menu">
+    <a class="pic" href="http://www3.telus.net/public/jianlu58/belugas3D.jpg">1</a> | 
+    <a class="pic" href="http://www3.telus.net/public/jianlu58/brain.JPG">2</a>|
+    <a class="pic" href="http://www3.telus.net/public/jianlu58/pumpkin.JPG">3</a>
+</p>
+<script>
+$("#menu").click(function(){
+    $("#container").html($("<img>").attr("src", this.href));;
+    return true;
+});
+</script>
+</body>
+</html>

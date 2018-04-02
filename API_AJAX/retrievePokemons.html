@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Alot Of Pokemons</title>
+    <script>
+        $(document).ready(function(){
+            $('#click').click(function(){
+                for(var x = 1; x < 151;x++){
+                    $('#All_Images').prepend("<img src='https://pokeapi.co/media/img/" + x + ".png' alt='none'>");
+                }
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <button id="click">Press Me</button>
+    <div id="All_Images"></div>
+</body>
+</html>

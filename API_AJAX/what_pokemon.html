@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Alot Of Pokemons</title>
+    <style>
+        #info{
+            height: 700px;
+            width: 300px;
+            border: 15px solid red;
+            display: inline-block;
+            vertical-align: top;
+        }
+        #All_Images{
+            display: inline-block;
+            width: 700px;
+        }
+        h1, h4, img, ul{
+            margin: 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+                for(var x = 1; x <= 151;x++){
+                    $('#All_Images').prepend("<img id='" + x + "' src='https://pokeapi.co/media/img/" + x + ".png' alt='none'>");
+                }
+                $(this).on('click', 'img', function(){
+
+                    $('.just_image').html($(this)); 
+                    $.get("https://pokeapi.co/api/v2/pokemon/" + $(this).attr('id'), function(res) {
+
+                    console.log(res);
+                    if($('.my_title').length<=0){
+                        $('.my_title').prepend(res.name);
+                    } else {
+                        $('.my_title').remove(); 
+                        $('.my_title').prepend(res.name);
+                    }
+                    for(var s = 0; s < res.abilities.length; s++){
+                        $('.abilities').append('<li>' + res.abilities[s].ability.name +'</li>');
+                    }
+                    
+                    $('.height').append('<li>' + res.height + '</li>');
+                    $('.weight').append('<li>' + res.weight + '</li>');
+                    }, "json")
+                })
+        });
+    </script>
+</head>
+<body>
+    <div id="All_Images"></div>
+    <div id="info">
+        <h1 class="my_title"></h1>
+
+        <div class="just_image"></div>
+
+        <h4>Abilities:</h4>
+        <ul class="abilities">
+
+        </ul>
+        <h4>Height:</h4>
+        <ul class="height">
+
+        </ul>
+        <h4>Weight:</h4>
+        <ul class="weight">
+
+        </ul>
+    </div>
+</body>
+</html>

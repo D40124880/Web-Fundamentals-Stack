@@ -1,0 +1,85 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+    }
+    
+
+#wrapper{
+    height: 2000px;
+    width: 900px;
+    background-color: turquoise;
+    margin: auto;
+}
+ul, li{
+    text-align: center;
+}
+button{
+    display: inline-block;
+}
+h1{
+    font-size: 30px;
+}
+.red{
+    background-color:red;
+}
+em{
+	color: blue;
+	font-weight: bold;
+}
+select, option{
+	text-align: center;
+}
+
+#data{
+    margin: 5px;
+    background: yellow;
+  }
+#buttons{
+    margin: 5px;
+    font-size: 14px;
+}
+.paras{
+    margin: 5px;
+    color: blue;
+}
+.span{
+    color: red;
+  }

@@ -1,0 +1,13 @@
+i clicked on icon of terminal
+cd Desktop/
+mkdir test/
+touch index.html styles.css commands.txt
+cp index.html index_2.html
+rm styles.css
+cd
+mkdir destination/
+mv index_2.html ../destination/
+ls
+ls
+rm -r destination/
+

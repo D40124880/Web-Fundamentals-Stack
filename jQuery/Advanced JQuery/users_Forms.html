@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Users</title>
+    <style>
+       table, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            height: 50px;
+        } 
+        #container{
+            height: 200px;
+            width: 210px;
+            background-color: silver;
+        }
+        #header_form{
+            width: 210px;
+        }
+        input{
+            display: block;
+            width: 200px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('#btn_save').click(function(e){
+                e.preventDefault();
+                $('#header_table #results_1').each(function(){
+                    var save1 = $('.result1').val();
+                    $('#results_1').append('<tr><td>' + save1 + '</td><tr>');
+                })
+                $('#header_table #results_2').each(function(){
+                    var save2 = $('.result2').val();
+                    $('#results_2').append('<tr><td>' + save2 + '</td><tr>');
+                })
+                $('#header_table #results_3').each(function(){
+                    var save3 = $('.result3').val();
+                    $('#results_3').append('<tr><td>' + save3 + '</td><tr>');
+                })
+                $('#header_table #results_4').each(function(){
+                    var save4 = $('.result4').val();
+                    $('#results_4').append('<tr><td>' + save4 + '</td></tr>');
+                })
+
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <table id="header_table">
+        <tr>
+            <th id="results_1">First Name</th>
+            <th id="results_2">Last Name</th>
+            <th id="results_3">Email</th>
+            <th id="results_4">Contact #</th>
+        </tr>
+    </table>
+    <br><br>
+    <div id="container">
+        <form id="header_form" action="#">
+            First Name: <input class="result1" type="text" name="first">
+            Last Name: <input class="result2" type="text" name="last">
+            Email: <input class="result3" type="text" name="email">
+            Contact #: <input class="result4" type="text" name="contact#"><br>
+            <input id="btn_save" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

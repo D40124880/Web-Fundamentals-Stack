@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Puzzle</title>
+    <script>
+        $(document).ready(function(){
+            $('#button0').click(function(){
+                $('.toggle0').toggle();
+            })
+            $('#button1').click(function(){
+                $('.toggle1').toggle();
+            }) 
+            $('#button2').click(function(){
+                $('.toggle2').toggle();
+            }) 
+            $('#button3').click(function(){
+                $('.toggle3').toggle();
+            }) 
+            $('#button4').click(function(){
+                $('.toggle4').toggle();
+            }) 
+        });
+   
+    </script>
+</head>
+<body>
+    <div id="button0">
+        <img class="toggle0" src="cat0.png" alt="none">
+        <img class="toggle0" style="display:none" src="ninja0.png" alt="none">
+    </div>
+    <div id="button1">
+        <img class="toggle1" src="cat1.png" alt="none">
+        <img class="toggle1" style="display:none" src="ninja1.png" alt="none">
+    </div>
+    <div id="button2">
+        <img class="toggle2" src="cat2.png" alt="none">
+        <img class="toggle2" style="display:none" src="ninja2.png" alt="none">
+    </div>
+    <div id="button3">
+        <img class="toggle3" src="cat3.png" alt="none">
+        <img class="toggle3" style="display:none" src="ninja3.png" alt="none">
+    </div>
+    <div id="button4">
+        <img class="toggle4" src="cat4.png" alt="none">
+        <img class="toggle4" style="display:none" src="ninja4.png" alt="none">
+    </div>
+</body>
+</html>

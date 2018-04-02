@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Contact Card</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <style>
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+        #container{
+            height: 600px;
+            width: 800px;
+            margin: auto;
+            background-color: silver;
+        }
+        #left_side{
+            display: inline-block;
+            height: 550px;
+            width: 340px;
+            background-color: skyblue;
+            vertical-align: top;
+        }
+        #card {
+            display: inline-block;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            padding: 2px 16px;
+            vertical-align: top;
+        }
+        #back{
+            display: inline-block;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            padding: 2px 16px;
+            vertical-align: top;
+        }
+
+        #card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('#add_user').click(function(e){
+                e.preventDefault();
+                
+                $('#card #box_top').each(function(){
+                    var username = $('.first_1').val();
+                    var user_last = $('.last_2').val();
+                    var describing = $('.desc').val();
+                    var contactCard = '';
+                    $('#box_top').append('<div><div class="cardBox1"><h4>' + username + ' ' + user_last +'</h4><button class="describe">' + 'Click for Description </button><hr></div><div class="cardBox2" style="display: none"><p class="contact_info">' + describing + '</p><hr></div></div>');
+                        return false;
+                })
+                
+            })
+            $(document).on('click', '.describe', function(){
+                console.log($(this).parent());
+                $(this).parent().hide();
+                console.log($(this).parent().siblings('.cardBox2'));
+                $(this).parent().siblings('.cardBox2').show();
+            })
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="left_side">
+            <h2>Adding New Users</h2>
+            <form action="#">
+                <label for="first">First Name: </label>
+                <input class="first_1" type="text" name="first"><br><br>
+
+                <label for="last">Last Name: </label>
+                <input class="last_2" type="text" name="last"><br><br><br><br>
+
+                Description: <br><input class="desc" type="text" name="description" style="width:250px; height:150px;"><br><br>
+
+                <button id="add_user">Add User</button>
+            </form>
+        </div>
+        <div id="card">
+            <div id="box_top">
+                <!-- <h1>The Name</h1>
+                <button id="describe">Click for Description</button> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $('#btnSave').click(function() {
+                $('#Tablesample tr').each(function() {
+                    var keval = $(this).find(".keyvalue input").val();
+                    console.log(keval);
+                })
+            })
+        });
+    </script>
+</head>
+<body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <table class="table" id="Tablesample">
+          <tr>
+            <th style="display:none;">
+              Model
+            </th>
+          </tr>
+          <tr>
+            <td style="display:none;" class="keyvalue">
+              <input type="text" name="Key" value="Key1" class="form-control" id="configKey" readonly="readonly">
+            </td>
+            <td>
+              <input type="text" name="Key" value="Id1" class="form-control" id="configId" readonly="readonly">
+            </td>
+          </tr>
+          <tr>
+            <td style="display:none;" class="keyvalue">
+              <input type="text" name="Key" value="Key2" class="form-control" id="configKey" readonly="readonly">
+            </td>
+            <td>
+              <input type="text" name="Key" value="Id2" class="form-control" id="configId" readonly="readonly">
+            </td>
+          </tr>
+          <tr>
+            <td style="display:none;" class="keyvalue">
+              <input type="text" name="Key" value="Key3" class="form-control" id="configKey" readonly="readonly">
+            </td>
+            <td>
+              <input type="text" name="Key" value="Id3" class="form-control" id="configId" readonly="readonly">
+            </td>
+          </tr>
+        </table>
+        
+        <button id="btnSave">Save</button>
+</body>
+</html>

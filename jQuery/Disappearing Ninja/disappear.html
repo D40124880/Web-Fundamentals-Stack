@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="disappear.css">
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Disappearing Ninja</title>
+
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).hide();
+            })
+            $('#restore').click(function(){
+                $('.img1').show('slow');
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <h1>jQuery - assignment 1</h1>
+        <div id="imgsss">
+            <div id="foto"><img class="img1" src="http://www.ninjafoodonline.com/wp-content/uploads/2016/12/smLogo.png" /></div>
+            <div id="foto"><img class="img1" src="http://www.ninjafoodonline.com/wp-content/uploads/2016/12/smLogo.png" /></div>
+            <div id="foto"><img class="img1" src="http://www.ninjafoodonline.com/wp-content/uploads/2016/12/smLogo.png" /></div>
+            <div id="foto"><img class="img1" src="http://www.ninjafoodonline.com/wp-content/uploads/2016/12/smLogo.png" /></div>
+            <div id="foto"><img class="img1" src="http://www.ninjafoodonline.com/wp-content/uploads/2016/12/smLogo.png" /></div>
+            <div id="foto"><img class="img1" src="http://www.ninjafoodonline.com/wp-content/uploads/2016/12/smLogo.png" /></div>
+        </div>
+        <button id="restore">Restore</button>
+    </div>
+</body>
+</html>
